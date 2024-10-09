@@ -11,4 +11,6 @@
 
 */
 
-document.getElementById("dayNow").innerHTML = `m/d/y/ <br /> h:m:s`;
+/* Display date & time */
+
+document.getElementById("dateNow").innerHTML = `m/d/y/ <br /> h:m:s`;
