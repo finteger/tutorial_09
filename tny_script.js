@@ -11,6 +11,4 @@
 
 */
 
-window.alert("Welcome to Tulsa");
-
-//camelCase
+document.getElementById("dayNow").innerHTML = `m/d/y/ <br /> h:m:s`;
