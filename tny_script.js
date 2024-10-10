@@ -14,7 +14,6 @@
 
 
 /* Display the time left until New Years Eve */
-
 document.getElementById("days").textContent = "dd";
 document.getElementById("hrs").textContent = "hh";
 document.getElementById("mins").textContent = "mm";
@@ -28,3 +27,6 @@ var timeStr = currentDay.toLocaleTimeString();
 /* Display date & time */
 document.getElementById("dateNow").innerHTML = 
 dateStr + "<br />" + timeStr;
+
+/* Display days left before January 1st, 2018 */
+var newYear = new Date("January 1, 2018");
