@@ -20,7 +20,7 @@ document.getElementById("mins").textContent = "mm";
 document.getElementById("secs").textContent = "ss";
 
 /* Store the current date & time */
-var currentDay = new Date("May, 23, 2018 14:35:05");
+var currentDay = new Date("October, 10, 2024 14:35:05");
 var dateStr = currentDay.toLocaleDateString();
 var timeStr = currentDay.toLocaleTimeString();
 
@@ -29,4 +29,4 @@ document.getElementById("dateNow").innerHTML =
 dateStr + "<br />" + timeStr;
 
 /* Display days left before January 1st, 2018 */
-var newYear = new Date("January 1, 2018");
+var newYear = new Date("January 1, 2024");
