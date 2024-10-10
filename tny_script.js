@@ -25,12 +25,21 @@ dateStr + "<br />" + timeStr;
 var newYear = new Date("January 1, 2024");
 var nextYear = currentDay.getFullYear() + 1;
 newYear.setFullYear(nextYear);
+
+/* Calculate the days left until New Years  */
 var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
+
+/* Calculate the hours left in the day */
+var hrsLeft = (daysLeft - Math.floor(daysLeft)) * 24;
 
 document.getElementById("dateNow").innerHTML = "m/d/y <br /> h:m:s";
 
 /* Display the time left until New Years Eve */
 document.getElementById("days").textContent = Math.floor(daysLeft);
-document.getElementById("hrs").textContent = "hh";
+document.getElementById("hrs").textContent = Math.floor(hrsLeft);
 document.getElementById("mins").textContent = "mm";
 document.getElementById("secs").textContent = "ss";
+
+
+
+
