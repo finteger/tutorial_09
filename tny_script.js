@@ -11,6 +11,7 @@
 
 */
 
+function runClock(){
 
 /* Store the current date & time */
 var currentDay = new Date("October, 10, 2024 14:35:05");
@@ -32,14 +33,22 @@ var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
 /* Calculate the hours left in the day */
 var hrsLeft = (daysLeft - Math.floor(daysLeft)) * 24;
 
+/* Calculate the minutes leftover in the day */
+var minsLeft = (hrsLeft - Math.floor(hrsLeft)) * 60;
+
+/* Calculate the seconds leftover in the day */
+var secsLeft = (minsLeft - Math.floor(minsLeft)) * 60;
+
+
 document.getElementById("dateNow").innerHTML = "m/d/y <br /> h:m:s";
 
 /* Display the time left until New Years Eve */
 document.getElementById("days").textContent = Math.floor(daysLeft);
 document.getElementById("hrs").textContent = Math.floor(hrsLeft);
-document.getElementById("mins").textContent = "mm";
-document.getElementById("secs").textContent = "ss";
+document.getElementById("mins").textContent = Math.floor(minsLeft);
+document.getElementById("secs").textContent = Math.floor(secsLeft);
 
 
+}
 
-
+runClock();
