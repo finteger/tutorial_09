@@ -11,10 +11,13 @@
 
 */
 
+runClock();
+setInterval("runClock()", 1000);
+
 function runClock(){
 
 /* Store the current date & time */
-var currentDay = new Date("October, 10, 2024 14:35:05");
+var currentDay = new Date();
 var dateStr = currentDay.toLocaleDateString();
 var timeStr = currentDay.toLocaleTimeString();
 
@@ -51,4 +54,5 @@ document.getElementById("secs").textContent = Math.floor(secsLeft);
 
 }
 
-runClock();
+
+
