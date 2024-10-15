@@ -43,7 +43,7 @@ var minsLeft = (hrsLeft - Math.floor(hrsLeft)) * 60;
 var secsLeft = (minsLeft - Math.floor(minsLeft)) * 60;
 
 
-document.getElementById("dateNow").innerHTML = "m/d/y <br /> h:m:s";
+document.getElementById("dateNow").innerHTML = `${dateStr} <br /> ${timeStr}`;
 
 /* Display the time left until New Years Eve */
 document.getElementById("days").textContent = Math.floor(daysLeft);
